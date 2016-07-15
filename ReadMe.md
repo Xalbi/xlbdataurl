@@ -9,7 +9,7 @@ npm install xlbdataurl
 ```
 ## Usage
 ```console
-const utils = require('./utils');
+const utils = require('xlbdataurl');
 ```
 
 
