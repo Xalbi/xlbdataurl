@@ -7,7 +7,7 @@
       "url",
       "data",
       "parse",
-      "json",
+      "json"
      ],
     "repository" :{
     "type" : "git",
