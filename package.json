@@ -1,0 +1,19 @@
+{
+    "name": "xlbdataurl",
+    "version": "0.0.1",
+    "dependencies": {    },
+    "description": "extract data from url, parse url data to json",
+    "keywords": [
+      "url",
+      "data",
+      "parse",
+      "json",
+     ],
+    "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/Xalbi/XLBlogger"
+    },
+    "main": "utils",
+    "author": "xalbi <ahmad.chelbi@outlook.com>",
+    "license" : "MIT"
+}
