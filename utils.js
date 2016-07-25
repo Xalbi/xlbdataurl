@@ -6,8 +6,6 @@
  *
  */
 
-
-
 exports.parseURL = function(url) {
 
   if (url && url.indexOf('?') > 0) {
@@ -40,5 +38,26 @@ exports.parseURL = function(url) {
    return {url : urlString, data : JSON.parse(dataStringParsed)}
   }else{
     return {url : url, data : undefined }
+  }
+};
+
+
+
+
+exports.urlQueryString = function(urlObject) {
+
+  if (urlObject && urlObject.url && urlObject.data) {
+    var urlString = urlObject.url
+
+    try {
+      var dataString = JSON.stringify(urlObject.data)
+      dataString = dataString.split('":"').join('=').split('","').join('&').split('{"')[1].split('"}')[0]
+    //  console.log(dataString);
+      return urlObject.url+'?'+dataString
+    } catch (e) {
+      console.log('CANNOT stringify the data '+e);
+    }
+  }else if (urlObject.url) {
+    return  urlObject.url
   }
 };
