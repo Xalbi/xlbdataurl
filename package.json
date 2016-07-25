@@ -1,13 +1,14 @@
 {
     "name": "xlbdataurl",
-    "version": "0.0.1",
+    "version": "0.1.3",
     "dependencies": {    },
-    "description": "extract data from url, parse url data to json",
+    "description": "Extract data from url, parse url data to json  and vice versa.",
     "keywords": [
       "url",
       "data",
       "parse",
-      "json"
+      "json",
+      "query string"
      ],
     "repository" :{
     "type" : "git",
